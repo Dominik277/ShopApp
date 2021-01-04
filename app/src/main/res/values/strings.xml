@@ -5,9 +5,11 @@
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="postavke">Postavke</string>
+    <string name="o_nama">O nama</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_stapovi">Štapovi</string>
+    <string name="menu_role">Role</string>
+    <string name="menu_satori">Šatori</string>
+    <string name="menu_mamci">Mamci</string>
 </resources>

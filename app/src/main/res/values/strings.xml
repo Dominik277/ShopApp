@@ -2,9 +2,9 @@
     <string name="app_name">Fishing tackle shop</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
+    <string name="ime_trgovine">Trgovina Ribolovnim Priborom</string>
+    <string name="email_adresa">trgovina.priborom@android.com</string>
+    <string name="opis_slike">Navigation header</string>
     <string name="postavke">Postavke</string>
     <string name="o_nama">O nama</string>
 

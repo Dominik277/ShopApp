@@ -9,12 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FishingTackleShop">
-        <activity android:name=".ui.mamci.MamciActivity" />
-        <activity android:name=".ui.role.RoleActivity" />
-        <activity android:name=".ui.satori.SatoriActivity" />
+        <activity
+            android:name=".ui.mamci.MamciActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".ui.role.RoleActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".ui.satori.SatoriActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".ui.stapovi.StapoviActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

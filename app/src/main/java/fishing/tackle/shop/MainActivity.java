@@ -73,23 +73,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.postavke:
-                startActivity(new Intent(MainActivity.this,StapoviActivity.class));
-                break;
-        }
-
-        return true;
-    }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.nav_stapovi){
             startActivity(new Intent(MainActivity.this,StapoviActivity.class));
-            finish();
         }else if (id == R.id.nav_role){
             startActivity(new Intent(MainActivity.this,RoleActivity.class));
         }else if (id == R.id.nav_satori){
@@ -97,8 +86,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }else if(id == R.id.nav_mamci){
             startActivity(new Intent(MainActivity.this,MamciActivity.class));
         }
-
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

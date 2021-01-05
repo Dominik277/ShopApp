@@ -8,8 +8,8 @@ import android.view.Menu;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
-
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.core.view.GravityCompat;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -43,6 +43,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         });
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
+
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this,drawer,toolbar,R.string.navigation_drawer_open,
+                R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
+
         NavigationView navigationView = findViewById(R.id.drawer);
         navigationView.setNavigationItemSelectedListener(this);
 
@@ -66,24 +73,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        switch (id){
-            case R.id.nav_stapovi:
-                Intent intentStapovi = new Intent(MainActivity.this,StapoviActivity.class);
-                startActivity(intentStapovi);
-                break;
-            case R.id.nav_role:
-                Intent intentRole = new Intent(MainActivity.this,RoleActivity.class);
-                startActivity(intentRole);
-                break;
-            case R.id.nav_satori:
-                Intent intentSatori = new Intent(MainActivity.this, SatoriActivity.class);
-                startActivity(intentSatori);
-                break;
-            case R.id.nav_mamci:
-                Intent intentMamci = new Intent(MainActivity.this,MamciActivity.class);
-                startActivity(intentMamci);
-                break;
+
+        if (id == R.id.nav_stapovi){
+            startActivity(new Intent(MainActivity.this,StapoviActivity.class));
         }
+
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

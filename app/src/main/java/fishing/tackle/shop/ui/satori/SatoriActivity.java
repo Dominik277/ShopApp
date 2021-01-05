@@ -28,8 +28,8 @@ public class SatoriActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_satori);
 
-        tabLayout = findViewById(R.id.tabLayoutMamci);
-        viewPager = findViewById(R.id.viewPagerMamci);
+        tabLayout = findViewById(R.id.tabLayoutSatori);
+        viewPager = findViewById(R.id.viewPagerSatori);
 
         tabLayout.addTab(tabLayout.newTab().setText("Bivy"));
         tabLayout.addTab(tabLayout.newTab().setText("Brolly"));

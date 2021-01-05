@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_stapovi">
 
     <fragment
-        android:id="@+id/nav_home"
+        android:id="@+id/nav_stapovi"
         android:name="fishing.tackle.shop.ui.role.RoleActivity"
         android:label="@string/menu_stapovi"
         tools:layout="@layout/activity_role" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_role"
         android:name="fishing.tackle.shop.ui.stapovi.StapoviActivity"
         android:label="@string/menu_role"
         tools:layout="@layout/activity_stapovi" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="fishing.tackle.shop.ui.satori.SatoriFragment"
+        android:id="@+id/nav_satori"
+        android:name="fishing.tackle.shop.ui.satori.SatoriActivity"
         android:label="@string/menu_satori"
         tools:layout="@layout/activity_satori" />
 </navigation>

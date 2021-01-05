@@ -11,7 +11,7 @@
         android:theme="@style/Theme.FishingTackleShop">
         <activity android:name=".ui.mamci.MamciActivity" />
         <activity android:name=".ui.role.RoleActivity" />
-        <activity android:name=".ui.satori.SatoriFragment" />
+        <activity android:name=".ui.satori.SatoriActivity" />
         <activity android:name=".ui.stapovi.StapoviActivity" />
         <activity
             android:name=".MainActivity"

@@ -1,22 +1,29 @@
 package fishing.tackle.shop;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
+
+import androidx.annotation.NonNull;
+import androidx.core.view.GravityCompat;
 import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import fishing.tackle.shop.ui.mamci.MamciActivity;
+import fishing.tackle.shop.ui.role.RoleActivity;
+import fishing.tackle.shop.ui.satori.SatoriActivity;
+import fishing.tackle.shop.ui.stapovi.StapoviActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     private AppBarConfiguration mAppBarConfiguration;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +44,12 @@ public class MainActivity extends AppCompatActivity {
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.drawer);
+        navigationView.setNavigationItemSelectedListener(this);
 
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_stapovi, R.id.nav_role, R.id.nav_satori)
                 .setDrawerLayout(drawer)
                 .build();
 
@@ -55,4 +63,29 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        switch (id){
+            case R.id.nav_stapovi:
+                Intent intentStapovi = new Intent(MainActivity.this,StapoviActivity.class);
+                startActivity(intentStapovi);
+                break;
+            case R.id.nav_role:
+                Intent intentRole = new Intent(MainActivity.this,RoleActivity.class);
+                startActivity(intentRole);
+                break;
+            case R.id.nav_satori:
+                Intent intentSatori = new Intent(MainActivity.this, SatoriActivity.class);
+                startActivity(intentSatori);
+                break;
+            case R.id.nav_mamci:
+                Intent intentMamci = new Intent(MainActivity.this,MamciActivity.class);
+                startActivity(intentMamci);
+                break;
+        }
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
+    }
 }

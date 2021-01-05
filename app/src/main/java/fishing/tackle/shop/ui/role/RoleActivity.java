@@ -12,10 +12,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import fishing.tackle.shop.R;
-import fishing.tackle.shop.ui.stapovi.Morski;
-import fishing.tackle.shop.ui.stapovi.Saranski;
-import fishing.tackle.shop.ui.stapovi.Somovski;
-import fishing.tackle.shop.ui.stapovi.StapoviActivity;
 
 public class RoleActivity extends AppCompatActivity {
 

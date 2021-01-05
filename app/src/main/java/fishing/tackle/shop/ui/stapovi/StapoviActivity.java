@@ -15,5 +15,8 @@ public class StapoviActivity extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Stapovi");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+
     }
 }

@@ -3,12 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.stapovi.Morski">
+    tools:context=".ui.role.Saranske">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Morski stapovi"
-        android:textAlignment="center"/>
+        android:text="Saranske role" />
 
 </FrameLayout>

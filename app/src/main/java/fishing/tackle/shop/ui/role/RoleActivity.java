@@ -1,11 +1,20 @@
 package fishing.tackle.shop.ui.role;
 
+import android.content.Context;
 import android.os.Bundle;
 import com.google.android.material.tabs.TabLayout;
+
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import fishing.tackle.shop.R;
+import fishing.tackle.shop.ui.stapovi.Morski;
+import fishing.tackle.shop.ui.stapovi.Saranski;
+import fishing.tackle.shop.ui.stapovi.Somovski;
 import fishing.tackle.shop.ui.stapovi.StapoviActivity;
 
 public class RoleActivity extends AppCompatActivity {
@@ -26,7 +35,7 @@ public class RoleActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Morske"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
-        final StapoviActivity.MyAdapter adapter = new StapoviActivity.MyAdapter(this,getSupportFragmentManager(),
+        final MyAdapter adapter = new MyAdapter(this,getSupportFragmentManager(),
                 tabLayout.getTabCount());
 
         viewPager.setAdapter(adapter);
@@ -53,4 +62,40 @@ public class RoleActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Role");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
+
+    class MyAdapter extends FragmentPagerAdapter{
+
+        Context context;
+        int totalTabs;
+
+        public MyAdapter(Context c, @NonNull FragmentManager fm,int totalTabs) {
+            super(fm);
+            context = c;
+            this.totalTabs = totalTabs;
+        }
+
+        @NonNull
+        @Override
+        public Fragment getItem(int position) {
+            switch (position){
+                case 0:
+                    Saranske saranskiFragment = new Saranske();
+                    return saranskiFragment;
+                case 1:
+                    Somovske somovskiFragment = new Somovske();
+                    return somovskiFragment;
+                case 2:
+                    Morske morskiFragment = new Morske();
+                    return morskiFragment;
+                default:
+                    return null;
+            }
+        }
+
+        @Override
+        public int getCount() {
+            return totalTabs;
+        }
+    }
+
 }

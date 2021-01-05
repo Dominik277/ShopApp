@@ -74,7 +74,19 @@ public class StapoviActivity extends AppCompatActivity {
         @NonNull
         @Override
         public Fragment getItem(int position) {
-            return null;
+            switch (position){
+                case 0:
+                    Saranski saranskiFragment = new Saranski();
+                    return saranskiFragment;
+                case 1:
+                    Somovski somovskiFragment = new Somovski();
+                    return somovskiFragment;
+                case 2:
+                    Morski morskiFragment = new Morski();
+                    return morskiFragment;
+                default:
+                    return null;
+            }
         }
 
         @Override

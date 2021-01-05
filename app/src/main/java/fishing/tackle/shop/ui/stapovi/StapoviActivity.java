@@ -24,8 +24,8 @@ public class StapoviActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stapovi);
 
-        tabLayout = findViewById(R.id.tabLayout);
-        viewPager = findViewById(R.id.viewPager);
+        tabLayout = findViewById(R.id.tabLayoutStapovi);
+        viewPager = findViewById(R.id.viewPagerStapovi);
 
         tabLayout.addTab(tabLayout.newTab().setText("Saranski"));
         tabLayout.addTab(tabLayout.newTab().setText("Somovski"));

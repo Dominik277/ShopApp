@@ -5,9 +5,9 @@ public class Model {
     private int image;
     private String title;
     private String price;
-    private String desc;
+    private int desc;
 
-    public Model(int image, String title,String price, String desc) {
+    public Model(int image, String title,String price, int desc) {
         this.image = image;
         this.title = title;
         this.price = price;
@@ -38,11 +38,11 @@ public class Model {
         this.price = price;
     }
 
-    public String getDesc() {
+    public int getDesc() {
         return desc;
     }
 
-    public void setDesc(String desc) {
+    public void setDesc(int desc) {
         this.desc = desc;
     }
 }

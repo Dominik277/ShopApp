@@ -26,10 +26,14 @@ public class StapoviActivity extends AppCompatActivity {
 
 
         models = new ArrayList<>();
-        models.add(new Model(R.drawable.brochure,"Brochure","Neki dugacak tekst"));
-        models.add(new Model(R.drawable.brochure,"Brochure","Neki dugacak tekst"));
-        models.add(new Model(R.drawable.brochure,"Brochure","Neki dugacak tekst"));
-        models.add(new Model(R.drawable.brochure,"Brochure","Neki dugacak tekst"));
+        models.add(new Model(R.drawable.shimanotribal,"Shimano Tribal TX-9A 13ft Intensity","Cijena: 3172,43 kn","Opis stapa"));
+        models.add(new Model(R.drawable.shimanotribal,"Century FMA-2 13ft 3-5oz","Cijena: 2999,99 kn","adfgfg"));
+        models.add(new Model(R.drawable.shimanotribal,"Free Spirit HI-S ive 13ft","Cijena: 4227,43 kn","afgadf"));
+        models.add(new Model(R.drawable.shimanotribal,"Fox Horizon X5 13ft","Cijena: 1903,75 kn","afgadfg"));
+        models.add(new Model(R.drawable.shimanotribal,"Greys Xlerate 13ft 3.5lb","Cijena: 2772,10 kn","afafdg"));
+        models.add(new Model(R.drawable.shimanotribal,"Nash NR Toro 13ft","Cijena: 2280,10 kn","asfgafg"));
+        models.add(new Model(R.drawable.shimanotribal,"Century ADV-1 13ft","Cijena: 2143,40 kn","asfgafg"));
+        models.add(new Model(R.drawable.shimanotribal,"Prologic Quasar K1 13ft","Cijena: 1679,40 kn","asfgfsg"));
 
         adapter = new Adapter(models,this);
 

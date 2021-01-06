@@ -26,7 +26,12 @@ public class StapoviActivity extends AppCompatActivity {
 
 
         models = new ArrayList<>();
-        models
+        models.add(new Model(R.drawable.brochure,"Brochure","Neki dugacak tekst"));
+        models.add(new Model(R.drawable.brochure,"Brochure","Neki dugacak tekst"));
+        models.add(new Model(R.drawable.brochure,"Brochure","Neki dugacak tekst"));
+        models.add(new Model(R.drawable.brochure,"Brochure","Neki dugacak tekst"));
+
+        adapter = new Adapter(models,this);
 
     }
 }

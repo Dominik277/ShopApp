@@ -10,6 +10,7 @@ import android.widget.TextView;
 import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
+import fishing.tackle.shop.R;
 
 public class Adapter extends PagerAdapter {
 

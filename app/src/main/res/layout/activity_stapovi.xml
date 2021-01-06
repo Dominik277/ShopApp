@@ -15,6 +15,16 @@
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        android:layout_centerInParent="true"
+        android:overScrollMode="never"
+        android:clipToPadding="false">
+    </androidx.viewpager.widget.ViewPager>
+
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPagerStapovi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,5 +32,19 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="100dp"
         tools:layout_editor_absoluteX="8dp"/>
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Now!"
+        android:textColor="#fff"
+        android:background="@drawable/abc_vector_test"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_centerHorizontal="true">
+    </Button>
 
 </RelativeLayout>

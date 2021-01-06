@@ -33,5 +33,7 @@ public class StapoviActivity extends AppCompatActivity {
 
         adapter = new Adapter(models,this);
 
+        viewPager = findViewById(R.id.v)
+
     }
 }

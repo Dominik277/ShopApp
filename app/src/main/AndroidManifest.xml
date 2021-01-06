@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FishingTackleShop">
-        <activity android:name=".ViewPager.MainActivityStapovi"></activity>
+        <activity android:name=".ui.stapovi.DetailActivity"></activity>
         <activity android:name=".ViewPager.DetailActivity" />
         <activity
             android:name=".ui.mamci.MamciActivity"

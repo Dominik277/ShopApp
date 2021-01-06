@@ -1,6 +1,7 @@
 package fishing.tackle.shop.ui.stapovi;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,6 +42,29 @@ public class Adapter extends PagerAdapter {
         ImageView imageView;
         TextView title,desc;
 
+        imageView = view.findViewById(R.id.image);
+        title = view.findViewById(R.id.title);
+        desc = view.findViewById(R.id.desc);
 
+        imageView.setImageResource(models.get(position).getImage());
+        title.setText(models.get(position).getTitle());
+        desc.setText(models.get(position).getDesc());
+
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context,DetailActivity.class);
+                intent.putExtra("param",models.get(position).getTitle());
+                context.startActivity(intent);
+            }
+        });
+        container.addView(view,0);
+        return view;
     }
+
+    @Override
+    public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
+        container.removeView((View)object);
+    }
+
 }

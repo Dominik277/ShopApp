@@ -16,8 +16,6 @@ public class StapoviActivity extends AppCompatActivity {
     ViewPager viewPager;
     Adapter adapter;
     List<Model> models;
-    Integer[] colors = null;
-    ArgbEvaluator argbEvaluator = new ArgbEvaluator();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -26,65 +24,26 @@ public class StapoviActivity extends AppCompatActivity {
 
 
         models = new ArrayList<>();
-        models.add(new Model(R.drawable.shimanotribal,"Shimano Tribal TX-9A 13ft Intensity","Cijena: 3172,43 kn",R.string.opisShimanoTribal));
-        models.add(new Model(R.drawable.centuryfma,"Century FMA-2 13ft 3-5oz","Cijena: 2999,99 kn",R.string.opisCenturyFMA));
-        models.add(new Model(R.drawable.freespirithisive,"Free Spirit HI-S ive 13ft","Cijena: 4227,43 kn",R.string.opisFreeSpiritHI_S_ive));
-        models.add(new Model(R.drawable.foxhorizonx5,"Fox Horizon X5 13ft","Cijena: 1903,75 kn",R.string.opisFoxHorizon));
-        models.add(new Model(R.drawable.greysxlerate,"Greys Xlerate 13ft 3.5lb","Cijena: 2772,10 kn",R.string.opisGreysXlerate));
-        models.add(new Model(R.drawable.nashnrtoro,"Nash NR Toro 13ft","Cijena: 2280,10 kn",R.string.opisNashNRTORO));
-        models.add(new Model(R.drawable.centuryadv,"Century ADV-1 13ft","Cijena: 2143,40 kn",R.string.opisCenturyADV));
-        models.add(new Model(R.drawable.prologicquasar,"Prologic Quasar K1 13ft","Cijena: 1679,40 kn",R.string.opisPrologicQuasar));
-        models.add(new Model(R.drawable.daiwainfinitydf,"Daiwa Infinity DF 13ft","Cijena: 1679,40 kn",R.string.opisDaiwaInfinity));
-        models.add(new Model(R.drawable.sportexcatapult,"Sportex Catapult 13ft","Cijena: 1679,40 kn",R.string.opisSportexCatapult));
-        models.add(new Model(R.drawable.dawialongbow,"Dawia Longbow 13ft","Cijena: 1679,40 kn",R.string.opisDaiwaLongbow));
-        models.add(new Model(R.drawable.jrccontact,"JRC Contact 13ft","Cijena: 1679,40 kn",R.string.opisJRCContact));
-        models.add(new Model(R.drawable.nashhgun,"Nash H-Gun 13ft","Cijena: 1679,40 kn",R.string.opisNashHGun));
-        models.add(new Model(R.drawable.shimanoalivio,"Shimano Alivio 13ft","Cijena: 1679,40 kn",R.string.opisShimanoAlivio));
+        models.add(new Model(R.drawable.shimanotribal, "Shimano Tribal TX-9A 13ft Intensity", "Cijena: 3172,43 kn", R.string.opisShimanoTribal));
+        models.add(new Model(R.drawable.centuryfma, "Century FMA-2 13ft 3-5oz", "Cijena: 2999,99 kn", R.string.opisCenturyFMA));
+        models.add(new Model(R.drawable.freespirithisive, "Free Spirit HI-S ive 13ft", "Cijena: 4227,43 kn", R.string.opisFreeSpiritHI_S_ive));
+        models.add(new Model(R.drawable.foxhorizonx5, "Fox Horizon X5 13ft", "Cijena: 1903,75 kn", R.string.opisFoxHorizon));
+        models.add(new Model(R.drawable.greysxlerate, "Greys Xlerate 13ft 3.5lb", "Cijena: 2772,10 kn", R.string.opisGreysXlerate));
+        models.add(new Model(R.drawable.nashnrtoro, "Nash NR Toro 13ft", "Cijena: 2280,10 kn", R.string.opisNashNRTORO));
+        models.add(new Model(R.drawable.centuryadv, "Century ADV-1 13ft", "Cijena: 2143,40 kn", R.string.opisCenturyADV));
+        models.add(new Model(R.drawable.prologicquasar, "Prologic Quasar K1 13ft", "Cijena: 1679,40 kn", R.string.opisPrologicQuasar));
+        models.add(new Model(R.drawable.daiwainfinitydf, "Daiwa Infinity DF 13ft", "Cijena: 1679,40 kn", R.string.opisDaiwaInfinity));
+        models.add(new Model(R.drawable.sportexcatapult, "Sportex Catapult 13ft", "Cijena: 1679,40 kn", R.string.opisSportexCatapult));
+        models.add(new Model(R.drawable.dawialongbow, "Dawia Longbow 13ft", "Cijena: 1679,40 kn", R.string.opisDaiwaLongbow));
+        models.add(new Model(R.drawable.jrccontact, "JRC Contact 13ft", "Cijena: 1679,40 kn", R.string.opisJRCContact));
+        models.add(new Model(R.drawable.nashhgun, "Nash H-Gun 13ft", "Cijena: 1679,40 kn", R.string.opisNashHGun));
+        models.add(new Model(R.drawable.shimanoalivio, "Shimano Alivio 13ft", "Cijena: 1679,40 kn", R.string.opisShimanoAlivio));
 
-        adapter = new Adapter(models,this);
+        adapter = new Adapter(models, this);
 
         viewPager = findViewById(R.id.viewPager);
         viewPager.setAdapter(adapter);
-        viewPager.setPadding(130,0,130,0);
-
-        Integer[] colors_temp = {
-                getResources().getColor(R.color.color1),
-                getResources().getColor(R.color.color2),
-                getResources().getColor(R.color.color3),
-                getResources().getColor(R.color.color4)
-        };
-
-        colors = colors_temp;
-
-        viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                if (position < (adapter.getCount() -1) && position < (colors.length - 1)) {
-                    viewPager.setBackgroundColor(
-
-                            (Integer) argbEvaluator.evaluate(
-                                    positionOffset,
-                                    colors[position],
-                                    colors[position + 1]
-                            )
-                    );
-                }
-
-                else {
-                    viewPager.setBackgroundColor(colors[colors.length - 1]);
-                }
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
-            }
-        });
+        viewPager.setPadding(130, 0, 130, 0);
 
     }
 }

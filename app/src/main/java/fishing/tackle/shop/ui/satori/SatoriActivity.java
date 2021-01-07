@@ -13,10 +13,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import fishing.tackle.shop.R;
-import fishing.tackle.shop.ui.mamci.Boile;
-import fishing.tackle.shop.ui.mamci.Kukuruz;
-import fishing.tackle.shop.ui.mamci.MamciActivity;
-import fishing.tackle.shop.ui.mamci.Pelete;
 
 public class SatoriActivity extends AppCompatActivity {
 

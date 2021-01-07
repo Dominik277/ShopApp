@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FishingTackleShop">
-        <activity android:name=".ui.role.RoleDetailActivity"></activity>
+        <activity android:name=".ui.mamci.MamciDetailActivity"></activity>
+        <activity android:name=".ui.role.RoleDetailActivity" />
         <activity android:name=".ui.stapovi.StapoviDetailActivity" />
         <activity android:name=".ViewPager.DetailActivity" />
         <activity

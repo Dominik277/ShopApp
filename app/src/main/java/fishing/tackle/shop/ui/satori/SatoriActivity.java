@@ -1,97 +1,38 @@
 package fishing.tackle.shop.ui.satori;
 
-import android.content.Context;
 import android.os.Bundle;
 
-import com.google.android.material.tabs.TabLayout;
+import java.util.ArrayList;
+import java.util.List;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import fishing.tackle.shop.R;
 
 public class SatoriActivity extends AppCompatActivity {
 
-    TabLayout tabLayout;
     ViewPager viewPager;
+    SatoriAdapter satoriAdapter;
+    List<SatoriModel> satoriModels;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_satori);
 
-        tabLayout = findViewById(R.id.tabLayoutSatori);
-        viewPager = findViewById(R.id.viewPagerSatori);
+        satoriModels = new ArrayList<>();
+        satoriModels.add(new SatoriModel(R.drawable.sticker, "Brochure", "Brochure is an informative paper document (often also used for advertising) that can be folded into a template"));
+        satoriModels.add(new SatoriModel(R.drawable.sticker, "Sticker", "Sticker is a type of label: a piece of printed paper, plastic, vinyl, or other material with pressure sensitive adhesive on one side"));
+        satoriModels.add(new SatoriModel(R.drawable.poster, "Poster", "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
+        satoriModels.add(new SatoriModel(R.drawable.namecard, "Namecard", "Business cards are cards bearing business information about a company or individual."));
 
-        tabLayout.addTab(tabLayout.newTab().setText("Bivy"));
-        tabLayout.addTab(tabLayout.newTab().setText("Brolly"));
-        tabLayout.addTab(tabLayout.newTab().setText("Suncobran"));
-        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+        satoriAdapter = new SatoriAdapter(satoriModels, this);
 
-        final MyAdapter adapter = new MyAdapter(this,getSupportFragmentManager(),
-                tabLayout.getTabCount());
+        viewPager = findViewById(R.id.viewPager);
+        viewPager.setAdapter(satoriAdapter);
+        viewPager.setPadding(130, 0, 130, 0);
 
-        viewPager.setAdapter(adapter);
-        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-
-        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                viewPager.setCurrentItem(tab.getPosition());
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
-
-        getSupportActionBar().setTitle("Satori");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-    }
-
-    class MyAdapter extends FragmentPagerAdapter {
-
-        Context context;
-        int totalTabs;
-
-        public MyAdapter(Context c, @NonNull FragmentManager fm, int totalTabs) {
-            super(fm);
-            context = c;
-            this.totalTabs = totalTabs;
-        }
-
-        @NonNull
-        @Override
-        public Fragment getItem(int position) {
-            switch (position){
-                case 0:
-                    Bivy bivyFragment = new Bivy();
-                    return bivyFragment;
-                case 1:
-                    Brolly brollyFragment = new Brolly();
-                    return brollyFragment;
-                case 2:
-                    Suncobran suncobranFragment = new Suncobran();
-                    return suncobranFragment;
-                default:
-                    return null;
-            }
-        }
-
-        @Override
-        public int getCount() {
-            return totalTabs;
-        }
     }
 
 }

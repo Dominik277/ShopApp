@@ -1,13 +1,13 @@
 package fishing.tackle.shop.ui.stapovi;
 
-public class Model {
+public class StapoviModel {
 
     private int image;
     private String title;
     private String price;
     private int desc;
 
-    public Model(int image, String title,String price, int desc) {
+    public StapoviModel(int image, String title, String price, int desc) {
         this.image = image;
         this.title = title;
         this.price = price;

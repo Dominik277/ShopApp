@@ -13,10 +13,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import fishing.tackle.shop.R;
-import fishing.tackle.shop.ui.role.Morske;
-import fishing.tackle.shop.ui.role.RoleActivity;
-import fishing.tackle.shop.ui.role.Saranske;
-import fishing.tackle.shop.ui.role.Somovske;
 
 public class MamciActivity extends AppCompatActivity {
 

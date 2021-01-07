@@ -14,13 +14,13 @@ import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 import fishing.tackle.shop.R;
 
-public class Adapter extends PagerAdapter {
+public class StapoviAdapter extends PagerAdapter {
 
-    private List<Model> models;
+    private List<StapoviModel> models;
     private LayoutInflater layoutInflater;
     private Context context;
 
-    public Adapter(List<Model> models,Context context){
+    public StapoviAdapter(List<StapoviModel> models, Context context){
         this.models = models;
         this.context = context;
     }
@@ -37,7 +37,7 @@ public class Adapter extends PagerAdapter {
 
     public Object instantiateItem(ViewGroup container, final int position){
         layoutInflater = LayoutInflater.from(context);
-        View view = layoutInflater.inflate(R.layout.item,container,false);
+        View view = layoutInflater.inflate(R.layout.item_stapovi,container,false);
 
         ImageView imageView;
         TextView title,desc,price;
@@ -55,7 +55,7 @@ public class Adapter extends PagerAdapter {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context,DetailActivity.class);
+                Intent intent = new Intent(context, StapoviDetailActivity.class);
                 intent.putExtra("param",models.get(position).getTitle());
                 context.startActivity(intent);
             }

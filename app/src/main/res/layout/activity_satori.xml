@@ -7,20 +7,28 @@
     android:layout_height="match_parent"
     tools:context=".ui.satori.SatoriActivity">
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayoutSatori"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#1db995">
-    </com.google.android.material.tabs.TabLayout>
-
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPagerSatori"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        android:layout_centerInParent="true"
+        android:overScrollMode="never"
+        android:clipToPadding="false">
+    </androidx.viewpager.widget.ViewPager>
+
+    <Button
+        android:id="@+id/btnOrderSatori"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tabLayoutRole"
-        android:layout_marginTop="100dp"
-        tools:layout_editor_absoluteX="8dp">
-    </androidx.viewpager.widget.ViewPager>
+        android:text="Dodaj u košaricu!"
+        android:textColor="#fff"
+        android:background="@drawable/round"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_centerHorizontal="true">
+    </Button>
 
 </RelativeLayout>

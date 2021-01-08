@@ -12,7 +12,7 @@ import fishing.tackle.shop.R;
 
 public class SatoriActivity extends AppCompatActivity {
 
-    ViewPager viewPager;
+    ViewPager viewPagerSatori;
     SatoriAdapter satoriAdapter;
     List<SatoriModel> satoriModels;
 
@@ -29,9 +29,9 @@ public class SatoriActivity extends AppCompatActivity {
 
         satoriAdapter = new SatoriAdapter(satoriModels, this);
 
-        viewPager = findViewById(R.id.viewPager);
-        viewPager.setAdapter(satoriAdapter);
-        viewPager.setPadding(130, 0, 130, 0);
+        viewPagerSatori = findViewById(R.id.viewPagerSatori);
+        viewPagerSatori.setAdapter(satoriAdapter);
+        viewPagerSatori.setPadding(130, 0, 130, 0);
 
     }
 

@@ -9,7 +9,7 @@
     android:background="@drawable/pozadina">
 
     <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager"
+        android:id="@+id/viewPagerStapovi"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:foregroundGravity="center"
@@ -19,7 +19,7 @@
     </androidx.viewpager.widget.ViewPager>
 
     <Button
-        android:id="@+id/btnOrder"
+        android:id="@+id/btnOrderStapovi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dodaj u košaricu"

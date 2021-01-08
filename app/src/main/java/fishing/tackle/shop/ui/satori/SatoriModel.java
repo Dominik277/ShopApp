@@ -2,37 +2,37 @@ package fishing.tackle.shop.ui.satori;
 
 public class SatoriModel {
 
-    private int image;
-    private String title;
-    private String desc;
+    private int imageSatori;
+    private String titleSatori;
+    private String descSatori;
 
-    public SatoriModel(int image, String title, String desc) {
-        this.image = image;
-        this.title = title;
-        this.desc = desc;
+    public SatoriModel(int imageSatori, String titleSatori, String descSatori) {
+        this.imageSatori = imageSatori;
+        this.titleSatori = titleSatori;
+        this.descSatori = descSatori;
     }
 
-    public int getImage() {
-        return image;
+    public int getImageSatori() {
+        return imageSatori;
     }
 
-    public void setImage(int image) {
-        this.image = image;
+    public void setImageSatori(int imageSatori) {
+        this.imageSatori = imageSatori;
     }
 
-    public String getTitle() {
-        return title;
+    public String getTitleSatori() {
+        return titleSatori;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setTitleSatori(String titleSatori) {
+        this.titleSatori = titleSatori;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getDescSatori() {
+        return descSatori;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setDescSatori(String descSatori) {
+        this.descSatori = descSatori;
     }
 }

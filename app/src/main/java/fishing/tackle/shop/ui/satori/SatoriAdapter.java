@@ -48,15 +48,15 @@ public class SatoriAdapter extends PagerAdapter {
         title = view.findViewById(R.id.titleSatori);
         desc = view.findViewById(R.id.descSatori);
 
-        imageView.setImageResource(satoriModels.get(position).getImage());
-        title.setText(satoriModels.get(position).getTitle());
-        desc.setText(satoriModels.get(position).getDesc());
+        imageView.setImageResource(satoriModels.get(position).getImageSatori());
+        title.setText(satoriModels.get(position).getTitleSatori());
+        desc.setText(satoriModels.get(position).getDescSatori());
 
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, SatoriDetailActivity.class);
-                intent.putExtra("param", satoriModels.get(position).getTitle());
+                intent.putExtra("param", satoriModels.get(position).getTitleSatori());
                 context.startActivity(intent);
                 // finish();
             }

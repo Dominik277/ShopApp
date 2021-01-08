@@ -2,47 +2,47 @@ package fishing.tackle.shop.ui.stapovi;
 
 public class StapoviModel {
 
-    private int image;
-    private String title;
-    private String price;
-    private int desc;
+    private int imageStapovi;
+    private String titleStapovi;
+    private String priceStapovi;
+    private int descStapovi;
 
-    public StapoviModel(int image, String title, String price, int desc) {
-        this.image = image;
-        this.title = title;
-        this.price = price;
-        this.desc = desc;
+    public StapoviModel(int imageStapovi, String titleStapovi, String priceStapovi, int descStapovi) {
+        this.imageStapovi = imageStapovi;
+        this.titleStapovi = titleStapovi;
+        this.priceStapovi = priceStapovi;
+        this.descStapovi = descStapovi;
     }
 
-    public int getImage() {
-        return image;
+    public int getImageStapovi() {
+        return imageStapovi;
     }
 
-    public void setImage(int image) {
-        this.image = image;
+    public void setImageStapovi(int imageStapovi) {
+        this.imageStapovi = imageStapovi;
     }
 
-    public String getTitle() {
-        return title;
+    public String getTitleStapovi() {
+        return titleStapovi;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setTitleStapovi(String titleStapovi) {
+        this.titleStapovi = titleStapovi;
     }
 
-    public String getPrice() {
-        return price;
+    public String getPriceStapovi() {
+        return priceStapovi;
     }
 
-    public void setPrice(String price) {
-        this.price = price;
+    public void setPriceStapovi(String priceStapovi) {
+        this.priceStapovi = priceStapovi;
     }
 
-    public int getDesc() {
-        return desc;
+    public int getDescStapovi() {
+        return descStapovi;
     }
 
-    public void setDesc(int desc) {
-        this.desc = desc;
+    public void setDescStapovi(int descStapovi) {
+        this.descStapovi = descStapovi;
     }
 }

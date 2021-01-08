@@ -2,37 +2,37 @@ package fishing.tackle.shop.ui.mamci;
 
 public class MamciModel {
 
-    private int image;
-    private String title;
-    private String desc;
+    private int imageMamci;
+    private String titleMamci;
+    private String descMamci;
 
-    public MamciModel(int image, String title, String desc) {
-        this.image = image;
-        this.title = title;
-        this.desc = desc;
+    public MamciModel(int imageMamci, String titleMamci, String descMamci) {
+        this.imageMamci = imageMamci;
+        this.titleMamci = titleMamci;
+        this.descMamci = descMamci;
     }
 
-    public int getImage() {
-        return image;
+    public int getImageMamci() {
+        return imageMamci;
     }
 
-    public void setImage(int image) {
-        this.image = image;
+    public void setImageMamci(int imageMamci) {
+        this.imageMamci = imageMamci;
     }
 
-    public String getTitle() {
-        return title;
+    public String getTitleMamci() {
+        return titleMamci;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setTitleMamci(String titleMamci) {
+        this.titleMamci = titleMamci;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getDescMamci() {
+        return descMamci;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setDescMamci(String descMamci) {
+        this.descMamci = descMamci;
     }
 }

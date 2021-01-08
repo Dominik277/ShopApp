@@ -16,18 +16,18 @@ import fishing.tackle.shop.R;
 
 public class StapoviAdapter extends PagerAdapter {
 
-    private List<StapoviModel> models;
+    private List<StapoviModel> modelsStapovi;
     private LayoutInflater layoutInflater;
     private Context context;
 
-    public StapoviAdapter(List<StapoviModel> models, Context context){
-        this.models = models;
+    public StapoviAdapter(List<StapoviModel> modelsStapovi, Context context){
+        this.modelsStapovi = modelsStapovi;
         this.context = context;
     }
 
     @Override
     public int getCount() {
-        return models.size();
+        return modelsStapovi.size();
     }
 
     @Override
@@ -42,21 +42,21 @@ public class StapoviAdapter extends PagerAdapter {
         ImageView imageView;
         TextView title,desc,price;
 
-        imageView = view.findViewById(R.id.image);
-        title = view.findViewById(R.id.title);
-        price = view.findViewById(R.id.price);
-        desc = view.findViewById(R.id.desc);
+        imageView = view.findViewById(R.id.imageStapovi);
+        title = view.findViewById(R.id.titleStapovi);
+        price = view.findViewById(R.id.priceStapovi);
+        desc = view.findViewById(R.id.descStapovi);
 
-        imageView.setImageResource(models.get(position).getImage());
-        title.setText(models.get(position).getTitle());
-        price.setText(models.get(position).getPrice());
-        desc.setText(models.get(position).getDesc());
+        imageView.setImageResource(modelsStapovi.get(position).getImageStapovi());
+        title.setText(modelsStapovi.get(position).getTitleStapovi());
+        price.setText(modelsStapovi.get(position).getPriceStapovi());
+        desc.setText(modelsStapovi.get(position).getDescStapovi());
 
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, StapoviDetailActivity.class);
-                intent.putExtra("param",models.get(position).getTitle());
+                intent.putExtra("param", modelsStapovi.get(position).getTitleStapovi());
                 context.startActivity(intent);
             }
         });

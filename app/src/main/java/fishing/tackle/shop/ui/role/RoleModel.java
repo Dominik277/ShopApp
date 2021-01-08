@@ -2,37 +2,37 @@ package fishing.tackle.shop.ui.role;
 
 public class RoleModel {
 
-    private int image;
-    private String title;
-    private String desc;
+    private int imageRole;
+    private String titleRole;
+    private String descRole;
 
-    public RoleModel(int image, String title, String desc) {
-        this.image = image;
-        this.title = title;
-        this.desc = desc;
+    public RoleModel(int imageRole, String titleRole, String descRole) {
+        this.imageRole = imageRole;
+        this.titleRole = titleRole;
+        this.descRole = descRole;
     }
 
-    public int getImage() {
-        return image;
+    public int getImageRole() {
+        return imageRole;
     }
 
-    public void setImage(int image) {
-        this.image = image;
+    public void setImageRole(int imageRole) {
+        this.imageRole = imageRole;
     }
 
-    public String getTitle() {
-        return title;
+    public String getTitleRole() {
+        return titleRole;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setTitleRole(String titleRole) {
+        this.titleRole = titleRole;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getDescRole() {
+        return descRole;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setDescRole(String descRole) {
+        this.descRole = descRole;
     }
 }

@@ -41,19 +41,19 @@ public class RoleAdapter extends PagerAdapter {
         layoutInflater = LayoutInflater.from(context);
         View view = layoutInflater.inflate(R.layout.item_role,container,false);
 
-        ImageView imageView;
-        TextView title;
-        TextView desc;
+        ImageView imageViewRole;
+        TextView titleRole;
+        TextView descRole;
 
-        imageView = view.findViewById(R.id.imageRole);
-        title = view.findViewById(R.id.titleRole);
-        desc = view.findViewById(R.id.descRole);
+        imageViewRole = view.findViewById(R.id.imageRole);
+        titleRole = view.findViewById(R.id.titleRole);
+        descRole = view.findViewById(R.id.descRole);
 
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context,RoleDetailActivity.class);
-                intent.putExtra("param",roleModels.get(position).getTitle());
+                intent.putExtra("param",roleModels.get(position).getTitleRole());
                 context.startActivity(intent);
             }
         });

@@ -42,19 +42,19 @@ public class MamciAdapter extends PagerAdapter {
         ImageView imageView;
         TextView title, desc;
 
-        imageView = view.findViewById(R.id.image);
-        title = view.findViewById(R.id.title);
-        desc = view.findViewById(R.id.desc);
+        imageView = view.findViewById(R.id.imageMamci);
+        title = view.findViewById(R.id.titleMamci);
+        desc = view.findViewById(R.id.descMamci);
 
-        imageView.setImageResource(mamciModels.get(position).getImage());
-        title.setText(mamciModels.get(position).getTitle());
-        desc.setText(mamciModels.get(position).getDesc());
+        imageView.setImageResource(mamciModels.get(position).getImageMamci());
+        title.setText(mamciModels.get(position).getTitleMamci());
+        desc.setText(mamciModels.get(position).getDescMamci());
 
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, MamciDetailActivity.class);
-                intent.putExtra("param", mamciModels.get(position).getTitle());
+                intent.putExtra("param", mamciModels.get(position).getTitleMamci());
                 context.startActivity(intent);
                 // finish();
             }

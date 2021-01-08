@@ -13,7 +13,7 @@ public class SatoriDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_satori);
 
-        TextView textView = findViewById(R.id.textView);
+        TextView textView = findViewById(R.id.textViewSatori);
         textView.setText(getIntent().getStringExtra("param"));
     }
 }

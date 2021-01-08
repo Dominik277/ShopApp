@@ -22,14 +22,14 @@ public class SatoriActivity extends AppCompatActivity {
         setContentView(R.layout.activity_satori);
 
         satoriModels = new ArrayList<>();
-        satoriModels.add(new SatoriModel(R.drawable.sticker, "Nash Titan Brolly", "Vrlo čvrsti šator namjenjen za jednu osobu"));
-        satoriModels.add(new SatoriModel(R.drawable.sticker, "Fox Royale Bivy", "Vrlo čvrsti šator namjenjen za jednu osobu"));
-        satoriModels.add(new SatoriModel(R.drawable.poster, "Prologic Commander", "Vrlo čvrsti šator namjenjen za jednu osobu"));
-        satoriModels.add(new SatoriModel(R.drawable.namecard, "Chub Cyfish", "Vrlo čvrsti šator namjenjen za jednu osobu"));
-        satoriModels.add(new SatoriModel(R.drawable.sticker, "Fox Easy Dome", "Vrlo čvrsti šator namjenjen za jednu osobu"));
-        satoriModels.add(new SatoriModel(R.drawable.sticker, "Nash Double Top", "Vrlo čvrsti šator namjenjen za jednu osobu"));
-        satoriModels.add(new SatoriModel(R.drawable.poster, "Fox Ultra Camo Brolly", "Vrlo čvrsti šator namjenjen za jednu osobu"));
-        satoriModels.add(new SatoriModel(R.drawable.namecard, "JRC Defender Brolly", "Vrlo čvrsti šator namjenjen za jednu osobu"));
+        satoriModels.add(new SatoriModel(R.drawable.nashtitan, "Nash Titan Brolly", "Vrlo čvrsti šator namjenjen za jednu osobu"));
+        satoriModels.add(new SatoriModel(R.drawable.foxroyale, "Fox Royale Bivy", "Vrlo čvrsti šator namjenjen za jednu osobu"));
+        satoriModels.add(new SatoriModel(R.drawable.prologiccommander, "Prologic Commander", "Vrlo čvrsti šator namjenjen za jednu osobu"));
+        satoriModels.add(new SatoriModel(R.drawable.chubcyfish, "Chub Cyfish", "Vrlo čvrsti šator namjenjen za jednu osobu"));
+        satoriModels.add(new SatoriModel(R.drawable.foxeasydome, "Fox Easy Dome", "Vrlo čvrsti šator namjenjen za jednu osobu"));
+        satoriModels.add(new SatoriModel(R.drawable.nashdoubletop, "Nash Double Top", "Vrlo čvrsti šator namjenjen za jednu osobu"));
+        satoriModels.add(new SatoriModel(R.drawable.foxbrolly, "Fox Ultra Camo Brolly", "Vrlo čvrsti šator namjenjen za jednu osobu"));
+        satoriModels.add(new SatoriModel(R.drawable.jrcbrolly, "JRC Defender Brolly", "Vrlo čvrsti šator namjenjen za jednu osobu"));
 
         satoriAdapter = new SatoriAdapter(satoriModels, this);
 

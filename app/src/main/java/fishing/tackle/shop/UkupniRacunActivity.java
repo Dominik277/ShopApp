@@ -1,18 +1,15 @@
-package fishing.tackle.shop.ui.stapovi;
+package fishing.tackle.shop;
 
 import androidx.appcompat.app.AppCompatActivity;
-import fishing.tackle.shop.MainActivity;
-import fishing.tackle.shop.R;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class StapoviKupnjaActivity extends AppCompatActivity {
+public class UkupniRacunActivity extends AppCompatActivity {
 
     TextView textViewArtiklRacun2;
     TextView textViewCijenaRacun2;
@@ -26,7 +23,7 @@ public class StapoviKupnjaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stapovi_kupnja);
+        setContentView(R.layout.activity_ukupni_racun);
 
         textViewArtiklRacun2 = findViewById(R.id.textViewArtiklRacun2);
         textViewCijenaRacun2 = findViewById(R.id.textViewCijenaRacun2);
@@ -48,11 +45,10 @@ public class StapoviKupnjaActivity extends AppCompatActivity {
         gumbPotvrdiKupnju.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(StapoviKupnjaActivity.this,"Uspješno ste obavili kupnju!",Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(StapoviKupnjaActivity.this, MainActivity.class);
+                Toast.makeText(UkupniRacunActivity.this,"Uspješno ste obavili kupnju!",Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(UkupniRacunActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
-
     }
 }

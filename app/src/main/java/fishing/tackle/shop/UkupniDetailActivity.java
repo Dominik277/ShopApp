@@ -1,18 +1,15 @@
-package fishing.tackle.shop.ui.stapovi;
+package fishing.tackle.shop;
 
 import androidx.appcompat.app.AppCompatActivity;
-import fishing.tackle.shop.R;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class StapoviDetailActivity extends AppCompatActivity {
+public class UkupniDetailActivity extends AppCompatActivity {
 
     TextView textViewImeArtikla;
     TextView textViewIznosCijene;
@@ -22,12 +19,11 @@ public class StapoviDetailActivity extends AppCompatActivity {
     EditText editTextAdresa;
     EditText editTextEmail;
     EditText editTextBroj;
-    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_stapovi);
+        setContentView(R.layout.activity_detail_ukupni);
 
         textViewImeArtikla = findViewById(R.id.textViewImeArtikla);
         textViewIznosCijene = findViewById(R.id.textViewIznosCijene);
@@ -52,7 +48,7 @@ public class StapoviDetailActivity extends AppCompatActivity {
         gumbKupi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(StapoviDetailActivity.this,StapoviKupnjaActivity.class);
+                Intent intent = new Intent(UkupniDetailActivity.this, StapoviKupnjaActivity.class);
                 intent.putExtra("ime",ime);
                 intent.putExtra("prezime",prezime);
                 intent.putExtra("adresa",adresa);

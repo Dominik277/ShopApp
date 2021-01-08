@@ -14,6 +14,7 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 import fishing.tackle.shop.R;
+import fishing.tackle.shop.UkupniDetailActivity;
 
 public class StapoviAdapter extends PagerAdapter {
 
@@ -59,7 +60,7 @@ public class StapoviAdapter extends PagerAdapter {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, StapoviDetailActivity.class);
+                Intent intent = new Intent(context, UkupniDetailActivity.class);
                 intent.putExtra("ime_artikla", modelsStapovi.get(position).getTitleStapovi());
                 intent.putExtra("iznos_cijene",modelsStapovi.get(position).getPriceStapovi());
                 context.startActivity(intent);

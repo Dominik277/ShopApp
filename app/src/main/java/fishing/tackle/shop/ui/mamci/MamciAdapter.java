@@ -11,6 +11,7 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 import fishing.tackle.shop.R;
+import fishing.tackle.shop.UkupniDetailActivity;
 
 public class MamciAdapter extends PagerAdapter {
 
@@ -53,7 +54,7 @@ public class MamciAdapter extends PagerAdapter {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, MamciDetailActivity.class);
+                Intent intent = new Intent(context, UkupniDetailActivity.class);
                 intent.putExtra("param", mamciModels.get(position).getTitleMamci());
                 context.startActivity(intent);
                 // finish();

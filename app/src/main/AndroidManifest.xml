@@ -11,9 +11,6 @@
         android:theme="@style/Theme.FishingTackleShop">
         <activity android:name=".UkupniRacunActivity"></activity>
         <activity android:name=".UkupniDetailActivity" />
-        <activity android:name=".ui.satori.SatoriDetailActivity" />
-        <activity android:name=".ui.mamci.MamciDetailActivity" />
-        <activity android:name=".ui.role.RoleDetailActivity" />
         <activity
             android:name=".ui.mamci.MamciActivity"
             android:parentActivityName=".MainActivity" />

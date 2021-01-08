@@ -13,6 +13,7 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 import fishing.tackle.shop.R;
+import fishing.tackle.shop.UkupniDetailActivity;
 
 public class SatoriAdapter extends PagerAdapter {
 
@@ -55,7 +56,7 @@ public class SatoriAdapter extends PagerAdapter {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, SatoriDetailActivity.class);
+                Intent intent = new Intent(context, UkupniDetailActivity.class);
                 intent.putExtra("param", satoriModels.get(position).getTitleSatori());
                 context.startActivity(intent);
                 // finish();

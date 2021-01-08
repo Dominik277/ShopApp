@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -47,10 +48,13 @@ public class StapoviAdapter extends PagerAdapter {
         price = view.findViewById(R.id.priceStapovi);
         desc = view.findViewById(R.id.descStapovi);
 
+
         imageView.setImageResource(modelsStapovi.get(position).getImageStapovi());
         title.setText(modelsStapovi.get(position).getTitleStapovi());
         price.setText(modelsStapovi.get(position).getPriceStapovi());
         desc.setText(modelsStapovi.get(position).getDescStapovi());
+
+
 
         view.setOnClickListener(new View.OnClickListener() {
             @Override

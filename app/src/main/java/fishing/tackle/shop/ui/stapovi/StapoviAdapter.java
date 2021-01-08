@@ -56,7 +56,8 @@ public class StapoviAdapter extends PagerAdapter {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, StapoviDetailActivity.class);
-                intent.putExtra("param", modelsStapovi.get(position).getTitleStapovi());
+                intent.putExtra("ime_artikla", modelsStapovi.get(position).getTitleStapovi());
+                intent.putExtra("iznos_cijene",modelsStapovi.get(position).getPriceStapovi());
                 context.startActivity(intent);
             }
         });

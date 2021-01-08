@@ -13,7 +13,7 @@ public class StapoviDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_stapovi);
 
-        TextView textView = findViewById(R.id.textViewStapovi);
+        TextView textView = findViewById(R.id.textViewKosarica);
         textView.setText(getIntent().getStringExtra("param"));
     }
 }

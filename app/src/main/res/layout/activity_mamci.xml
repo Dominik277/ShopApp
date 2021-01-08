@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.mamci.MamciActivity">
+    tools:context=".ui.mamci.MamciActivity"
+    android:background="@drawable/pozadina">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPagerMamci"

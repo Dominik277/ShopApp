@@ -25,6 +25,13 @@ public class MamciActivity extends AppCompatActivity {
         mamciModels.add(new MamciModel(R.drawable.sticker, "Brochure", "Brochure is an informative paper document (often also used for advertising) that can be folded into a template"));
         mamciModels.add(new MamciModel(R.drawable.sticker, "Sticker", "Sticker is a type of label: a piece of printed paper, plastic, vinyl, or other material with pressure sensitive adhesive on one side"));
         mamciModels.add(new MamciModel(R.drawable.poster, "Poster", "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
+        mamciModels.add(new MamciModel(R.drawable.sticker, "Brochure", "Brochure is an informative paper document (often also used for advertising) that can be folded into a template"));
+        mamciModels.add(new MamciModel(R.drawable.sticker, "Sticker", "Sticker is a type of label: a piece of printed paper, plastic, vinyl, or other material with pressure sensitive adhesive on one side"));
+        mamciModels.add(new MamciModel(R.drawable.poster, "Poster", "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
+        mamciModels.add(new MamciModel(R.drawable.sticker, "Brochure", "Brochure is an informative paper document (often also used for advertising) that can be folded into a template"));
+        mamciModels.add(new MamciModel(R.drawable.sticker, "Sticker", "Sticker is a type of label: a piece of printed paper, plastic, vinyl, or other material with pressure sensitive adhesive on one side"));
+        mamciModels.add(new MamciModel(R.drawable.poster, "Poster", "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
+
 
         adapterMamci = new MamciAdapter(mamciModels, this);
 

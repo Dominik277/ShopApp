@@ -26,6 +26,10 @@ public class SatoriActivity extends AppCompatActivity {
         satoriModels.add(new SatoriModel(R.drawable.sticker, "Sticker", "Sticker is a type of label: a piece of printed paper, plastic, vinyl, or other material with pressure sensitive adhesive on one side"));
         satoriModels.add(new SatoriModel(R.drawable.poster, "Poster", "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
         satoriModels.add(new SatoriModel(R.drawable.namecard, "Namecard", "Business cards are cards bearing business information about a company or individual."));
+        satoriModels.add(new SatoriModel(R.drawable.sticker, "Brochure", "Brochure is an informative paper document (often also used for advertising) that can be folded into a template"));
+        satoriModels.add(new SatoriModel(R.drawable.sticker, "Sticker", "Sticker is a type of label: a piece of printed paper, plastic, vinyl, or other material with pressure sensitive adhesive on one side"));
+        satoriModels.add(new SatoriModel(R.drawable.poster, "Poster", "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
+        satoriModels.add(new SatoriModel(R.drawable.namecard, "Namecard", "Business cards are cards bearing business information about a company or individual."));
 
         satoriAdapter = new SatoriAdapter(satoriModels, this);
 

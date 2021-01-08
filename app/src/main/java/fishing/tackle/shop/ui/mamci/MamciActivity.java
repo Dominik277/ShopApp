@@ -22,15 +22,15 @@ public class MamciActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mamci);
 
         mamciModels = new ArrayList<>();
-        mamciModels.add(new MamciModel(R.drawable.sticker, "Brochure", "Brochure is an informative paper document (often also used for advertising) that can be folded into a template"));
-        mamciModels.add(new MamciModel(R.drawable.sticker, "Sticker", "Sticker is a type of label: a piece of printed paper, plastic, vinyl, or other material with pressure sensitive adhesive on one side"));
-        mamciModels.add(new MamciModel(R.drawable.poster, "Poster", "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
-        mamciModels.add(new MamciModel(R.drawable.sticker, "Brochure", "Brochure is an informative paper document (often also used for advertising) that can be folded into a template"));
-        mamciModels.add(new MamciModel(R.drawable.sticker, "Sticker", "Sticker is a type of label: a piece of printed paper, plastic, vinyl, or other material with pressure sensitive adhesive on one side"));
-        mamciModels.add(new MamciModel(R.drawable.poster, "Poster", "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
-        mamciModels.add(new MamciModel(R.drawable.sticker, "Brochure", "Brochure is an informative paper document (often also used for advertising) that can be folded into a template"));
-        mamciModels.add(new MamciModel(R.drawable.sticker, "Sticker", "Sticker is a type of label: a piece of printed paper, plastic, vinyl, or other material with pressure sensitive adhesive on one side"));
-        mamciModels.add(new MamciModel(R.drawable.poster, "Poster", "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
+        mamciModels.add(new MamciModel(R.drawable.sticker, "Mainline Cell", "Lagana boila namjenjena za hvatanje velikih šarana"));
+        mamciModels.add(new MamciModel(R.drawable.sticker, "Nash Key", "Lagana boila namjenjena za hvatanje velikih šarana"));
+        mamciModels.add(new MamciModel(R.drawable.poster, "CCMoore LiveSystem", "Lagana boila namjenjena za hvatanje velikih šarana"));
+        mamciModels.add(new MamciModel(R.drawable.sticker, "Mainline Hybrid", "Lagana boila namjenjena za hvatanje velikih šarana"));
+        mamciModels.add(new MamciModel(R.drawable.sticker, "Kukuruz", "Najstariji i najbolji mamac za hvatanje sarana"));
+        mamciModels.add(new MamciModel(R.drawable.poster, "Mainline Pelete", "Mainline pelete koje otpustaju svoj miris jako dugo"));
+        mamciModels.add(new MamciModel(R.drawable.sticker, "CCMoore SpodMix", "Spod mix marke CCMoore koji sluzi kada se peca na zig rig"));
+        mamciModels.add(new MamciModel(R.drawable.sticker, "Sticky Baits Mannila", "Lagana boila namjenjena za hvatanje velikih šarana"));
+        mamciModels.add(new MamciModel(R.drawable.poster, "Korda Goo", "Dip marke Korda koji pravi veliki privlacni oblak u vodi"));
 
 
         adapterMamci = new MamciAdapter(mamciModels, this);

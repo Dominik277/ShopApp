@@ -50,6 +50,10 @@ public class RoleAdapter extends PagerAdapter {
         titleRole = view.findViewById(R.id.titleRole);
         descRole = view.findViewById(R.id.descRole);
 
+        imageViewRole.setImageResource(roleModels.get(position).getImageRole());
+        titleRole.setText(roleModels.get(position).getTitleRole());
+        descRole.setText(roleModels.get(position).getDescRole());
+
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

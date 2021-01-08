@@ -21,18 +21,18 @@ public class RoleActivity extends AppCompatActivity {
         setContentView(R.layout.activity_role);
 
         roleModels = new ArrayList<>();
-        roleModels.add(new RoleModel(R.drawable.sticker, "Brochure", "Brochure is an informative paper document (often also used for advertising) that can be folded into a template"));
-        roleModels.add(new RoleModel(R.drawable.sticker, "Sticker", "Sticker is a type of label: a piece of printed paper, plastic, vinyl, or other material with pressure sensitive adhesive on one side"));
-        roleModels.add(new RoleModel(R.drawable.poster, "Poster", "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
-        roleModels.add(new RoleModel(R.drawable.sticker, "Brochure", "Brochure is an informative paper document (often also used for advertising) that can be folded into a template"));
-        roleModels.add(new RoleModel(R.drawable.sticker, "Sticker", "Sticker is a type of label: a piece of printed paper, plastic, vinyl, or other material with pressure sensitive adhesive on one side"));
-        roleModels.add(new RoleModel(R.drawable.poster, "Poster", "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
-        roleModels.add(new RoleModel(R.drawable.sticker, "Brochure", "Brochure is an informative paper document (often also used for advertising) that can be folded into a template"));
-        roleModels.add(new RoleModel(R.drawable.sticker, "Sticker", "Sticker is a type of label: a piece of printed paper, plastic, vinyl, or other material with pressure sensitive adhesive on one side"));
-        roleModels.add(new RoleModel(R.drawable.poster, "Poster", "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
-        roleModels.add(new RoleModel(R.drawable.sticker, "Brochure", "Brochure is an informative paper document (often also used for advertising) that can be folded into a template"));
-        roleModels.add(new RoleModel(R.drawable.sticker, "Sticker", "Sticker is a type of label: a piece of printed paper, plastic, vinyl, or other material with pressure sensitive adhesive on one side"));
-        roleModels.add(new RoleModel(R.drawable.poster, "Poster", "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
+        roleModels.add(new RoleModel(R.drawable.sticker, "Daiwa Basia QDX", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
+        roleModels.add(new RoleModel(R.drawable.sticker, "Shimano Ultegra", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
+        roleModels.add(new RoleModel(R.drawable.poster, "Shimano Aero Technium", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
+        roleModels.add(new RoleModel(R.drawable.sticker, "Daiwa Emblem", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
+        roleModels.add(new RoleModel(R.drawable.sticker, "Daiwa Tournament s6000T", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
+        roleModels.add(new RoleModel(R.drawable.poster, "Shimano Speedcast", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
+        roleModels.add(new RoleModel(R.drawable.sticker, "Penn Affinity", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
+        roleModels.add(new RoleModel(R.drawable.sticker, "Penn Surfblast", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
+        roleModels.add(new RoleModel(R.drawable.poster, "Shimano PowerAero", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
+        roleModels.add(new RoleModel(R.drawable.sticker, "Daiwa Infinity", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
+        roleModels.add(new RoleModel(R.drawable.sticker, "DAM Quick", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
+
 
         roleAdapter = new RoleAdapter(roleModels,this);
 

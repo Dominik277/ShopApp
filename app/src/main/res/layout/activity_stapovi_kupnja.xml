@@ -6,12 +6,225 @@
     android:layout_height="match_parent"
     tools:context=".ui.stapovi.StapoviKupnjaActivity">
 
-    <TextView
-        android:id="@+id/textView"
+    <Button
+        android:id="@+id/gumbPotvrdiKupnju"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="dafgdsfgdfgdsfgdfsgsdfgsd"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="25dp"
+        android:text="Potvrdi kupnju!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewPotvrdaKupnje" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutArtiklRacun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRacun">
+
+        <TextView
+            android:id="@+id/textViewArtiklRacun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ARTIKL: "
+            android:textColor="#262626"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textViewArtiklRacun2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#262626"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCijenaRacun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutArtiklRacun">
+
+        <TextView
+            android:id="@+id/textViewCijenaRacun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CIJENA: "
+            android:textColor="#262626"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textViewCijenaRacun2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#262626"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutImeRacun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCijenaRacun">
+
+        <TextView
+            android:id="@+id/textViewImeRacun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IME: "
+            android:textColor="#262626"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textViewImeRacun2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#262626"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPrezimeRacun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutImeRacun">
+
+        <TextView
+            android:id="@+id/textViewPrezimeRacun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PREZIME: "
+            android:textColor="#262626"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textViewPrezimeRacun2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#262626"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAdresaRacun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutPrezimeRacun">
+
+        <TextView
+            android:id="@+id/textViewAdresaRacun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADRESA: "
+            android:textColor="#262626"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textViewAdresaRacun2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#262626"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutEmailRacun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutAdresaRacun">
+
+        <TextView
+            android:id="@+id/textViewEmailRacun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMAIL: "
+            android:textColor="#262626"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textViewEmailRacun2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#262626"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBrojRacun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutEmailRacun">
+
+        <TextView
+            android:id="@+id/textViewBrojRacun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BROJ: "
+            android:textColor="#262626"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textViewBrojRacun2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#262626"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewRacun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Ovo je vaš račun!"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPotvrdaKupnje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:text="Želite li potvrditi kupnju?"
+        android:textColor="#262626"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/gumbPotvrdiKupnju"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

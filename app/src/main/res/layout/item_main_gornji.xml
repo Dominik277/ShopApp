@@ -9,37 +9,47 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="245dp"
         app:cardCornerRadius="20dp"
         android:layout_margin="8dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp">
+            android:layout_height="250dp">
+
+            <TextView
+                android:id="@+id/textGornji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Sljedeci artikli su na akciji"
+                android:textColor="#262626"
+                android:textSize="20dp"/>
 
             <ImageView
-                android:id="@+id/imageAkcija"
+                android:id="@+id/imageAkcijaGore"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="152dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/daiwainfinitydf"/>
+                android:src="@drawable/daiwainfinitydf"
+                android:layout_below="@+id/textGornji"/>
             <TextView
-                android:id="@+id/opisAkcija"
+                android:id="@+id/opisAkcijaGore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#262626"
-                android:layout_below="@+id/imageAkcija"
+                android:layout_below="@+id/imageAkcijaGore"
                 android:text="Opis"
                 android:textSize="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="16dp"/>
             <TextView
-                android:id="@+id/cijenaAkcija"
+                android:id="@+id/cijenaAkcijaGore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#262626"
                 android:textSize="20dp"
-                android:layout_below="@+id/opisAkcija"
+                android:layout_below="@+id/opisAkcijaGore"
                 android:text="Cijena"
                 android:layout_marginTop="3dp"
                 android:layout_marginLeft="16dp"
@@ -49,5 +59,59 @@
                 android:ellipsize="end"/>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <TextView
+                android:id="@+id/textDonji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Sljedeci artikli su na akciji"
+                android:textColor="#262626"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:id="@+id/imageAkcijaDonji"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:scaleType="centerCrop"
+                android:layout_below="@+id/textDonji"
+                android:src="@drawable/daiwainfinitydf"/>
+            <TextView
+                android:id="@+id/opisAkcijaDonji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#262626"
+                android:layout_below="@+id/imageAkcijaDonji"
+                android:text="Opis"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"/>
+            <TextView
+                android:id="@+id/cijenaAkcijaDonji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#262626"
+                android:textSize="20dp"
+                android:layout_below="@+id/opisAkcijaDonji"
+                android:text="Cijena"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:maxLines="3"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
 </LinearLayout>
 

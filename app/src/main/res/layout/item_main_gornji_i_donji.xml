@@ -75,7 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="Sljedeci artikli su na akciji"
+                android:text="Sljedeci artikli su novi na stanju"
                 android:textColor="#262626"
                 android:textSize="20dp"/>
 

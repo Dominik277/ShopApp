@@ -76,16 +76,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer.requestLayout();
 
         modelsMain = new ArrayList<>();
-        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
-        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
-        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
-        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
-        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
-        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
-        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
-        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
-        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
-        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
+        modelsMain.add(new MainActivityModel(R.drawable.kordastowbobbins,R.drawable.kordaboom,"Korda Stow Bobbins","Korda Boom Hooklink","289,99 kn","99,99 kn"));
+        modelsMain.add(new MainActivityModel(R.drawable.kordadarkmatter,R.drawable.kordakurvshank,"Korda Dark Matter","Korda KurvShank Hook","69,99","39,99 kn"));
+        modelsMain.add(new MainActivityModel(R.drawable.kordatacklebox,R.drawable.foxblacklabel,"Korda Tacklebox","Fox Black Label","199,99 kn","299,99 kn"));
+        modelsMain.add(new MainActivityModel(R.drawable.trakkerchair,R.drawable.foxrodpod,"Trakker Chair","Fox Rodpod","4499,99 kn","4499,99 kn"));
+        modelsMain.add(new MainActivityModel(R.drawable.trakkerbedchair,R.drawable.delkimtxi,"Trakker Bedchair","Delkim TX-i","1699,99 kn","3899,99 kn"));
+        modelsMain.add(new MainActivityModel(R.drawable.mat,R.drawable.centurylandingnet,"JRC Mat","Century Landing Net","579,99 kn","1299,99 kn"));
+        modelsMain.add(new MainActivityModel(R.drawable.buttrest,R.drawable.lead,"Sonik Buttrest","Korda lead","49,99 kn","8,99 kn"));
+        modelsMain.add(new MainActivityModel(R.drawable.hooklink,R.drawable.readytiedrigs,"Korda Hooklink","Korda Ready Tied Rigs","47,99 kn","29,99 kn"));
+        modelsMain.add(new MainActivityModel(R.drawable.sparespoolcase,R.drawable.trakkerbag,"Daiwa Sparespool Case","Trakker Bag","379,99 kn","349,99 kn"));
+        modelsMain.add(new MainActivityModel(R.drawable.kordapva,R.drawable.leadpouch,"Korda PVA","Nash Lead Pouch","32,99 kn","199,99 kn"));
 
 
         adapterMain = new MainActivityAdapter(modelsMain,this);

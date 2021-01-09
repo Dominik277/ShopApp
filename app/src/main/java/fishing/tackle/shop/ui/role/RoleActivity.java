@@ -21,17 +21,17 @@ public class RoleActivity extends AppCompatActivity {
         setContentView(R.layout.activity_role);
 
         roleModels = new ArrayList<>();
-        roleModels.add(new RoleModel(R.drawable.dawiabasia45qdx, "Daiwa Basia QDX", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
-        roleModels.add(new RoleModel(R.drawable.shimanoultegra, "Shimano Ultegra", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
-        roleModels.add(new RoleModel(R.drawable.shimanoaerotechnium, "Shimano Aero Technium", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
-        roleModels.add(new RoleModel(R.drawable.daiwaemblem, "Daiwa Emblem", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
-        roleModels.add(new RoleModel(R.drawable.dawiatournament, "Daiwa Tournament s6000T", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
-        roleModels.add(new RoleModel(R.drawable.shimanospeedcast, "Shimano Speedcast", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
-        roleModels.add(new RoleModel(R.drawable.pennaffinity, "Penn Affinity", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
-        roleModels.add(new RoleModel(R.drawable.pennsurfblaster, "Penn Surfblast", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
-        roleModels.add(new RoleModel(R.drawable.shimanopoweraero, "Shimano PowerAero", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
-        roleModels.add(new RoleModel(R.drawable.daiwainfinity, "Daiwa Infinity", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
-        roleModels.add(new RoleModel(R.drawable.damquick, "DAM Quick", "Velika i robusna rola namjenjena za dalekometne izbačaje"));
+        roleModels.add(new RoleModel(R.drawable.dawiabasia45qdx, "Daiwa Basia QDX", "4599,99 kn"));
+        roleModels.add(new RoleModel(R.drawable.shimanoultegra, "Shimano Ultegra", "2499,99 kn"));
+        roleModels.add(new RoleModel(R.drawable.shimanoaerotechnium, "Shimano Aero Technium", "4899,99 kn"));
+        roleModels.add(new RoleModel(R.drawable.daiwaemblem, "Daiwa Emblem", "1899,99 kn"));
+        roleModels.add(new RoleModel(R.drawable.dawiatournament, "Daiwa Tournament s6000T", "2499,99 kn"));
+        roleModels.add(new RoleModel(R.drawable.shimanospeedcast, "Shimano Speedcast", "949,99 kn"));
+        roleModels.add(new RoleModel(R.drawable.pennaffinity, "Penn Affinity", "899,99 kn"));
+        roleModels.add(new RoleModel(R.drawable.pennsurfblaster, "Penn Surfblast", "799,99 kn"));
+        roleModels.add(new RoleModel(R.drawable.shimanopoweraero, "Shimano PowerAero", "2399,99 kn"));
+        roleModels.add(new RoleModel(R.drawable.daiwainfinity, "Daiwa Infinity", "2799,99 kn"));
+        roleModels.add(new RoleModel(R.drawable.damquick, "DAM Quick", "659,99 kn"));
 
 
         roleAdapter = new RoleAdapter(roleModels,this);

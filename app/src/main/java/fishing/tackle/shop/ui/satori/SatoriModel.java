@@ -4,12 +4,12 @@ public class SatoriModel {
 
     private int imageSatori;
     private String titleSatori;
-    private String descSatori;
+    private String cijenaSatori;
 
-    public SatoriModel(int imageSatori, String titleSatori, String descSatori) {
+    public SatoriModel(int imageSatori, String titleSatori, String cijenaSatori) {
         this.imageSatori = imageSatori;
         this.titleSatori = titleSatori;
-        this.descSatori = descSatori;
+        this.cijenaSatori = cijenaSatori;
     }
 
     public int getImageSatori() {
@@ -28,11 +28,11 @@ public class SatoriModel {
         this.titleSatori = titleSatori;
     }
 
-    public String getDescSatori() {
-        return descSatori;
+    public String getCijenaSatori() {
+        return cijenaSatori;
     }
 
-    public void setDescSatori(String descSatori) {
-        this.descSatori = descSatori;
+    public void setCijenaSatori(String cijenaSatori) {
+        this.cijenaSatori = cijenaSatori;
     }
 }

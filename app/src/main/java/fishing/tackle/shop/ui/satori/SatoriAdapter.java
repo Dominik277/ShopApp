@@ -51,13 +51,14 @@ public class SatoriAdapter extends PagerAdapter {
 
         imageView.setImageResource(satoriModels.get(position).getImageSatori());
         title.setText(satoriModels.get(position).getTitleSatori());
-        desc.setText(satoriModels.get(position).getDescSatori());
+        desc.setText(satoriModels.get(position).getCijenaSatori());
 
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, UkupniDetailActivity.class);
-                intent.putExtra("param", satoriModels.get(position).getTitleSatori());
+                intent.putExtra("ime_artikla", satoriModels.get(position).getTitleSatori());
+                intent.putExtra("iznos_cijene",satoriModels.get(position).getCijenaSatori());
                 context.startActivity(intent);
                 // finish();
             }

@@ -49,13 +49,14 @@ public class MamciAdapter extends PagerAdapter {
 
         imageView.setImageResource(mamciModels.get(position).getImageMamci());
         title.setText(mamciModels.get(position).getTitleMamci());
-        desc.setText(mamciModels.get(position).getDescMamci());
+        desc.setText(mamciModels.get(position).getCijenaMamci());
 
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, UkupniDetailActivity.class);
-                intent.putExtra("param", mamciModels.get(position).getTitleMamci());
+                intent.putExtra("ime_artikla", mamciModels.get(position).getTitleMamci());
+                intent.putExtra("iznos_cijene",mamciModels.get(position).getCijenaMamci());
                 context.startActivity(intent);
                 // finish();
             }

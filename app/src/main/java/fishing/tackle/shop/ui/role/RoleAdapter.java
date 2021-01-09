@@ -52,13 +52,14 @@ public class RoleAdapter extends PagerAdapter {
 
         imageViewRole.setImageResource(roleModels.get(position).getImageRole());
         titleRole.setText(roleModels.get(position).getTitleRole());
-        descRole.setText(roleModels.get(position).getDescRole());
+        descRole.setText(roleModels.get(position).getCijenaRole());
 
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, UkupniDetailActivity.class);
-                intent.putExtra("param",roleModels.get(position).getTitleRole());
+                intent.putExtra("ime_artikla",roleModels.get(position).getTitleRole());
+                intent.putExtra("iznos_cijene",roleModels.get(position).getCijenaRole());
                 context.startActivity(intent);
             }
         });

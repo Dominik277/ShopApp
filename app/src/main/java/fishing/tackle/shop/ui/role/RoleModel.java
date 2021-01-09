@@ -4,12 +4,12 @@ public class RoleModel {
 
     private int imageRole;
     private String titleRole;
-    private String descRole;
+    private String cijenaRole;
 
-    public RoleModel(int imageRole, String titleRole, String descRole) {
+    public RoleModel(int imageRole, String titleRole, String cijenaRole) {
         this.imageRole = imageRole;
         this.titleRole = titleRole;
-        this.descRole = descRole;
+        this.cijenaRole = cijenaRole;
     }
 
     public int getImageRole() {
@@ -28,11 +28,11 @@ public class RoleModel {
         this.titleRole = titleRole;
     }
 
-    public String getDescRole() {
-        return descRole;
+    public String getCijenaRole() {
+        return cijenaRole;
     }
 
-    public void setDescRole(String descRole) {
-        this.descRole = descRole;
+    public void setCijenaRole(String cijenaRole) {
+        this.cijenaRole = cijenaRole;
     }
 }

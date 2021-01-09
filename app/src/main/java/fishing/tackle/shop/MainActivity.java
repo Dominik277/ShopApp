@@ -1,5 +1,6 @@
 package fishing.tackle.shop;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     ViewPager viewPagerMain;
     MainActivityAdapter adapterMain;
     List<MainActivityModel> modelsMain;
+    FloatingActionButton fab;
+    Context context;
 
 
     @Override
@@ -43,12 +46,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
+        fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(MainActivity.this,FloatingActionButton.class));
             }
         });
 
@@ -91,6 +93,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         viewPagerMain = findViewById(R.id.viewPagerMain);
         viewPagerMain.setAdapter(adapterMain);
         viewPagerMain.setPadding(130, 0, 130, 0);
+
+
 
     }
 

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".FloatingActionButton">
+    tools:context=".FloatingActionButtonActivity">
 
     <TextView
         android:id="@+id/nasovUpita"
@@ -19,19 +19,19 @@
         android:textColor="#262626"/>
 
     <EditText
-        android:id="@+id/salje"
+        android:id="@+id/editTextSalje"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ovdje navedite tko šalje poruku"
         android:layout_marginTop="30dp"/>
     <EditText
-        android:id="@+id/prima"
+        android:id="@+id/editTextPrima"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:hint="Ovdje navedite tko prima poruku"/>
     <EditText
-        android:id="@+id/poruka"
+        android:id="@+id/editTextPoruka"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"

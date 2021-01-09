@@ -4,12 +4,12 @@ public class MamciModel {
 
     private int imageMamci;
     private String titleMamci;
-    private String descMamci;
+    private String cijenaMamci;
 
-    public MamciModel(int imageMamci, String titleMamci, String descMamci) {
+    public MamciModel(int imageMamci, String titleMamci, String cijenaMamci) {
         this.imageMamci = imageMamci;
         this.titleMamci = titleMamci;
-        this.descMamci = descMamci;
+        this.cijenaMamci = cijenaMamci;
     }
 
     public int getImageMamci() {
@@ -28,11 +28,11 @@ public class MamciModel {
         this.titleMamci = titleMamci;
     }
 
-    public String getDescMamci() {
-        return descMamci;
+    public String getCijenaMamci() {
+        return cijenaMamci;
     }
 
-    public void setDescMamci(String descMamci) {
-        this.descMamci = descMamci;
+    public void setCijenaMamci(String cijenaMamci) {
+        this.cijenaMamci = cijenaMamci;
     }
 }

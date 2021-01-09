@@ -22,14 +22,14 @@ public class SatoriActivity extends AppCompatActivity {
         setContentView(R.layout.activity_satori);
 
         satoriModels = new ArrayList<>();
-        satoriModels.add(new SatoriModel(R.drawable.nashtitan, "Nash Titan Brolly", "Vrlo čvrsti šator namjenjen za jednu osobu"));
-        satoriModels.add(new SatoriModel(R.drawable.foxroyale, "Fox Royale Bivy", "Vrlo čvrsti šator namjenjen za jednu osobu"));
-        satoriModels.add(new SatoriModel(R.drawable.prologiccommander, "Prologic Commander", "Vrlo čvrsti šator namjenjen za jednu osobu"));
-        satoriModels.add(new SatoriModel(R.drawable.chubcyfish, "Chub Cyfish", "Vrlo čvrsti šator namjenjen za jednu osobu"));
-        satoriModels.add(new SatoriModel(R.drawable.foxeasydome, "Fox Easy Dome", "Vrlo čvrsti šator namjenjen za jednu osobu"));
-        satoriModels.add(new SatoriModel(R.drawable.nashdoubletop, "Nash Double Top", "Vrlo čvrsti šator namjenjen za jednu osobu"));
-        satoriModels.add(new SatoriModel(R.drawable.foxbrolly, "Fox Ultra Camo Brolly", "Vrlo čvrsti šator namjenjen za jednu osobu"));
-        satoriModels.add(new SatoriModel(R.drawable.jrcbrolly, "JRC Defender Brolly", "Vrlo čvrsti šator namjenjen za jednu osobu"));
+        satoriModels.add(new SatoriModel(R.drawable.nashtitan, "Nash Titan Brolly", "2119,99 kn"));
+        satoriModels.add(new SatoriModel(R.drawable.foxroyale, "Fox Royale Bivy", "1899,99 kn"));
+        satoriModels.add(new SatoriModel(R.drawable.prologiccommander, "Prologic Commander", "3099,99 kn"));
+        satoriModels.add(new SatoriModel(R.drawable.chubcyfish, "Chub Cyfish", "1449,99 kn"));
+        satoriModels.add(new SatoriModel(R.drawable.foxeasydome, "Fox Easy Dome", "1999,99 kn"));
+        satoriModels.add(new SatoriModel(R.drawable.nashdoubletop, "Nash Double Top", "2199,99 kn"));
+        satoriModels.add(new SatoriModel(R.drawable.foxbrolly, "Fox Ultra Camo Brolly", "2499,99 kn"));
+        satoriModels.add(new SatoriModel(R.drawable.jrcbrolly, "JRC Defender Brolly", "3999,99 kn"));
 
         satoriAdapter = new SatoriAdapter(satoriModels, this);
 

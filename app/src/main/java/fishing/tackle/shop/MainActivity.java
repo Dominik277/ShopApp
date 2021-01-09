@@ -8,6 +8,10 @@ import android.view.Menu;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.core.view.GravityCompat;
@@ -15,14 +19,20 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
 import fishing.tackle.shop.ui.mamci.MamciActivity;
 import fishing.tackle.shop.ui.role.RoleActivity;
 import fishing.tackle.shop.ui.satori.SatoriActivity;
 import fishing.tackle.shop.ui.stapovi.StapoviActivity;
+import fishing.tackle.shop.ui.stapovi.StapoviAdapter;
+import fishing.tackle.shop.ui.stapovi.StapoviModel;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     private AppBarConfiguration mAppBarConfiguration;
+    ViewPager viewPagerMain;
+    MainActivityAdapter adapterMain;
+    List<MainActivityModel> modelsMain;
 
 
     @Override
@@ -63,6 +73,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.bringToFront();
         drawer.requestLayout();
 
+        modelsMain = new ArrayList<>();
+        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
+        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
+        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
+        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
+        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
+        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
+        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
+        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
+        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
+        modelsMain.add(new MainActivityModel(R.drawable.ccmoorelivesystem,R.drawable.ccmoorelivesystem,"sdafasdf","asdfdfs","asdfsdf","sdfsdaf"));
+
+
+        adapterMain = new MainActivityAdapter(modelsMain,this);
+
+        viewPagerMain = findViewById(R.id.viewPagerMain);
+        viewPagerMain.setAdapter(adapterMain);
+        viewPagerMain.setPadding(130, 0, 130, 0);
 
     }
 

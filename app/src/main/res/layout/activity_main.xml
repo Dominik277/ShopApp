@@ -7,7 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:openDrawer="start">
+    tools:openDrawer="start"
+    android:background="@drawable/pozadinamain">
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/drawer"
@@ -18,14 +19,19 @@
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/activity_main_drawer"/>
 
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        android:layout_centerInParent="true"
+        android:overScrollMode="never"
+        android:clipToPadding="false">
+    </androidx.viewpager.widget.ViewPager>
+
     <include
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
-    <include
-        layout="@layout/item_main_gornji_i_donji"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

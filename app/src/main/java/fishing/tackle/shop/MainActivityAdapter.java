@@ -19,6 +19,11 @@ public class MainActivityAdapter extends PagerAdapter {
     private LayoutInflater layoutInflater;
     private Context context;
 
+    public MainActivityAdapter(List<MainActivityModel> modelsMain,Context context){
+        this.modelsMain = modelsMain;
+        this.context = context;
+    }
+
     @Override
     public int getCount() {
         return modelsMain.size();

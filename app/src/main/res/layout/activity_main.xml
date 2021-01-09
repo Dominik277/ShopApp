@@ -24,7 +24,7 @@
         android:layout_height="match_parent" />
 
     <include
-        layout="@layout/item_main_gornji"
+        layout="@layout/item_main_gornji_i_donji"
         android:layout_width="wrap_content"
         android:layout_height="200dp"/>
 

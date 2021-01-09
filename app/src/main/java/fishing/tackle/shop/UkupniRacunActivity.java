@@ -35,6 +35,8 @@ public class UkupniRacunActivity extends AppCompatActivity {
         gumbPotvrdiKupnju = findViewById(R.id.gumbPotvrdiKupnju);
 
 
+        textViewArtiklRacun2.setText(getIntent().getStringExtra("imeArtikla"));
+        textViewCijenaRacun2.setText(getIntent().getStringExtra("iznosCijene"));
         textViewImeRacun2.setText(getIntent().getStringExtra("ime"));
         textViewPrezimeRacun2.setText(getIntent().getStringExtra("prezime"));
         textViewAdresaRacun2.setText(getIntent().getStringExtra("adresa"));

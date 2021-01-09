@@ -34,27 +34,30 @@ public class UkupniDetailActivity extends AppCompatActivity {
         editTextEmail = findViewById(R.id.editTextEmail);
         editTextBroj = findViewById(R.id.editTextBroj);
 
+        String imeArtikla = getIntent().getStringExtra("ime_artikla").toString();
+        String iznosCijen = getIntent().getStringExtra("iznos_cijene").toString();
+
         textViewImeArtikla.setText(getIntent().getStringExtra("ime_artikla"));
         textViewIznosCijene.setText(getIntent().getStringExtra("iznos_cijene"));
-
-        String ime = editTextIme.getText().toString();
-        String prezime = editTextPrezime.getText().toString();
-        String adresa = editTextAdresa.getText().toString();
-        String email = editTextEmail.getText().toString();
-        String broj = editTextBroj.getText().toString();
-
-
 
         gumbKupi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(UkupniDetailActivity.this, UkupniRacunActivity.class);
+                String ime = editTextIme.getText().toString();
+                String prezime = editTextPrezime.getText().toString();
+                String adresa = editTextAdresa.getText().toString();
+                String email = editTextEmail.getText().toString();
+                String broj = editTextBroj.getText().toString();
                 intent.putExtra("ime",ime);
                 intent.putExtra("prezime",prezime);
                 intent.putExtra("adresa",adresa);
                 intent.putExtra("email",email);
                 intent.putExtra("broj",broj);
+                intent.putExtra("imeArtikla",imeArtikla);
+                intent.putExtra("iznosCijene",iznosCijen);
                 startActivity(intent);
+                finish();
             }
         });
 
